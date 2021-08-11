@@ -12,7 +12,7 @@ namespace Faust
             InitializeComponent();
         }
 
-        private static string _DESCTOPPATH = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+        private static string _DESKTOPPATH = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
         private static readonly string ExecutablePath = Assembly.GetEntryAssembly().Location;
         private static readonly string StartupDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Startup);
         private static readonly string InstallLocation = Path.Combine(StartupDirectory, Path.GetFileName(ExecutablePath));
@@ -33,14 +33,14 @@ namespace Faust
 
             // DIRECTORIES
 
-            string[] _filesNormal = Directory.GetFiles(_DESCTOPPATH, "*");
-            string[] _directoriesNormal = Directory.GetDirectories(_DESCTOPPATH, "*", SearchOption.AllDirectories);
+            string[] _filesNormal = Directory.GetFiles(_DESKTOPPATH, "*");
+            string[] _directoriesNormal = Directory.GetDirectories(_DESKTOPPATH, "*", SearchOption.AllDirectories);
 
             // REMOVE desktop.ini
 
             for (int i = 0; i < _filesNormal.Length; i++)
             {
-                if (_filesNormal[i] == _DESCTOPPATH + "\\desktop.ini")
+                if (_filesNormal[i] == _DESKTOPPATH + "\\desktop.ini")
                 {
                     Remove_desctop_ini(ref _filesNormal, i);
                 }
@@ -98,14 +98,14 @@ namespace Faust
         private void hiddenToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            string[] _filesNormal = Directory.GetFiles(_DESCTOPPATH, "*");
-            string[] _directoriesNormal = Directory.GetDirectories(_DESCTOPPATH, "*", SearchOption.AllDirectories);
+            string[] _filesNormal = Directory.GetFiles(_DESKTOPPATH, "*");
+            string[] _directoriesNormal = Directory.GetDirectories(_DESKTOPPATH, "*", SearchOption.AllDirectories);
 
             // REMOVE desktop.ini
 
             for (int i = 0; i < _filesNormal.Length; i++)
             {
-                if (_filesNormal[i] == _DESCTOPPATH + "\\desktop.ini")
+                if (_filesNormal[i] == _DESKTOPPATH + "\\desktop.ini")
                 {
                     Remove_desctop_ini(ref _filesNormal, i);
                 }
@@ -131,14 +131,14 @@ namespace Faust
         private void normalToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            string[] _filesNormal = Directory.GetFiles(_DESCTOPPATH, "*");
-            string[] _directoriesNormal = Directory.GetDirectories(_DESCTOPPATH, "*", SearchOption.AllDirectories);
+            string[] _filesNormal = Directory.GetFiles(_DESKTOPPATH, "*");
+            string[] _directoriesNormal = Directory.GetDirectories(_DESKTOPPATH, "*", SearchOption.AllDirectories);
 
             // REMOVE desktop.ini
 
             for (int i = 0; i < _filesNormal.Length; i++)
             {
-                if (_filesNormal[i] == _DESCTOPPATH + "\\desktop.ini")
+                if (_filesNormal[i] == _DESKTOPPATH + "\\desktop.ini")
                 {
                     Remove_desctop_ini(ref _filesNormal, i);
                 }
