@@ -1,4 +1,4 @@
 # :wastebasket: Faust
 Hiding trash files from your desktop
 
-![](https://thumbs.gfycat.com/FluffyEveryBudgie-size_restricted.gif =1920x1080)
+<img src="https://thumbs.gfycat.com/FluffyEveryBudgie-size_restricted.gif" width="1920" height="1080"/>
