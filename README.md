@@ -1,8 +1,9 @@
 # :wastebasket: Faust
-Hiding trash files from your desktop
+Hiding trash from your desktop
 
 <img src="https://thumbs.gfycat.com/FluffyEveryBudgie-size_restricted.gif" width="900" height="500"/>
 
 # :gear:Functions:
-  `Hides files`
+  `Hides files and folders`
+  
   `Autorun`
